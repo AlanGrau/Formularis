@@ -1,0 +1,252 @@
+<html>
+
+<head>
+	<Title> 1 - Crea un formulari bàsic que sol·licite el nom, el correu electrònic i la contrasenya d'un usuari. </Title>
+<link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+	<h3> 1 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+	Nom:<br/>
+	    <input type="text" name="nom" value="" />
+	    <br/>
+
+	Correu electronic:<br/>
+	    <input type="text" name="nom" value="" />
+	    <br/>
+
+	Contrasenya:<br/>
+	    <input type="text" name="nom" value="" />
+	    <br/><br/>
+	    <input type="submit" name="enviar" value="Enviar" />
+	    <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
+
+<html>
+
+<head>
+	<Title> 2 - Formulari amb un camp de selecció que permeta a l'usuari triar el seu país d'origen. </Title>
+</head>
+
+<body>
+	<h3> 2 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+	Pais d'origen:<br/>
+	    <select id="pais" name="pais">
+		<option value="Alemania">Alemania</option>
+		<option value="Africa">Africa</option>
+		<option value="Inglaterra">Inglaterra</option>
+		<option value="Francia">Francia</option>
+		<option value="Espanya">Espanya</option>
+		<option value="Altre Pais">Altre Pais</option>		
+	    </select><br/><br/>
+
+	    <input type="submit" name="enviar" value="Enviar" />
+	    <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
+
+<html>
+
+<head>
+	<Title> 3 - Crea un formulari que incloga caselles de verificació per seleccionar múltiples opcions, com ara gustos o preferències. </Title>
+</head>
+
+<body>
+	<h3> 3 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+	Quines son les teues preferencies o tus gustos:<br/>
+	    <input type="radio" name="Pais" value="Esport" checked="checked" /> Esport
+	    <br/><br/>
+	    <input type="radio" name="Pais" value="Musica" checked="checked" /> Musica
+	    <br/><br/>
+	    <input type="radio" name="Pais" value="Videojocs" checked="checked" /> Videojocs
+	    <br/><br/>
+	    <input type="radio" name="Pais" value="Viatjar" checked="checked" /> Viatjar
+	    <br/><br/>
+            <input type="radio" name="Pais" value="Altres Preferencies o Gustos" checked="checked" /> Altres Preferencies o gustos
+	    <br/><br/>
+
+	    <input type="submit" name="enviar" value="Enviar" />
+
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
+
+<html>
+
+<head>
+	<Title> 4 - Crea un formulari amb botons de ràdio perquè l'usuari puga triar entre diferents opcions (per exemple, tipus de compte: estàndard, premium, bàsic). </Title>
+</head>
+
+<body>
+	<h3> 4 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+	Quines son les teues preferencies o tus gustos:<br/>
+	    <input type="radio" name="Tipo" value="estandard" checked="checked" /> Estandard
+	    <br/><br/>
+	    <input type="radio" name="Tipo" value="premium" checked="checked" /> Premium
+	    <br/><br/>
+	    <input type="radio" name="Tipo" value="bàsic" checked="checked" /> Basic
+	    <br/><br/>
+
+	    <input type="submit" name="enviat" value="Enviar" />
+
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
+
+<html>
+
+<head>
+	<Title> 5 - Crea un formulari amb un camp de text multilineal que permeta als usuaris proporcionar comentaris o suggeriments. </Title>
+</head>
+
+<body>
+	<h3> 5 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+	Comentaris i sugerencies:<br/>
+	    <textarea id="comentaris" style="width: 100%; resize: none;"  name="sugerencies" rows="5"></textarea>
+	<br/><br/>
+	    <input type="submit" style="width: 100%" name="enviat" value="Enviar" />
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
+
+<html>
+
+<head>
+	<Title> 6 - Afegeix la validació de camps obligatoris utilitzant l'atribut required en alguns camps un formulari. </Title>
+</head>
+
+<body>
+	<h3> 6 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+	Comentaris i sugerencies:<br/>
+	    Nom:<br/>
+	    <input type="text" name="nom" value="" required/>
+	    <br/>
+
+	Correu electronic:<br/>
+	    <input type="text" name="nom" value="" required/>
+	    <br/>
+
+	Contrasenya:<br/>
+	    <input type="text" name="nom" value="" required/>
+	    <br/><br/>
+
+	    <input type="submit" name="enviar" value="Enviar" />
+	    <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
+
+<html>
+
+<head>
+	<Title> 7 - Incorpora un camp de data que sol·licite a l'usuari la seua data de naixement. </Title>
+</head>
+
+<body>
+	<h3> 7 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+	    <label for="data">Data de naixement:</label><br/>
+	    <input type="date" id="data" name="data" required>
+            <br/><br/>
+	    <input type="submit" name="enviar" value="Enviar" />
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
+
+<html>
+
+<head>
+	<Title> 8 - Un formulari amb un camp de càrrega d'arxius per permetre als usuaris pujar documents o imatges. </Title>
+</head>
+
+<body>
+	<h3> 8 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+	Documents i imatges:<br/>
+	    <input type="file" id="arxiu" name="document" required>
+            <br/><br/>
+	    <input type="submit" name="enviar" value="Enviar" />
+
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
+
+<html>
+
+<head>
+	<Title> 9 - Agrupa camps relacionats utilitzant l'element <fieldset> i <legend>. Per exemple, agrupa els camps relacionats amb l'adreça. </Title>
+</head>
+
+<body>
+	<h3> 9 - Rellena este formulario </h3>
+	<form action="/php/Rellena.php" method="get">
+		<fieldset>
+			<legend>Comentaris i sugerencies:</legend>
+
+			Ciutat:<br/>
+	    		<input type="text" name="Ciutat" value="" />
+	    		<br/>
+
+			Carrer:<br/>
+	    		<input type="text" name="Carrer" value="" />
+	    		<br/>
+
+			Codi Postal:<br/>
+	    		<input type="text" name="Codi Postal" value="" />
+	    		<br/><br/>
+
+
+		</fieldset><br/>
+
+	<input type="submit" name="enviar" value="Enviar" />
+	<input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+	</form>
+
+</body>
+
+</html>
+
+-------------------------------------------------------------------------------------
